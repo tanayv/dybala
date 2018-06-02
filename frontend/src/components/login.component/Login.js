@@ -1,21 +1,23 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './logo.png';
 import './Login.css';
+
+
 
 class Login extends Component {
   render() {
     return (
-      <div className="Login">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className="mat-background">
+        <div className="login-box mat-card">
+          <div className="logo"/>
+          <input className="bnb-input" type="text" placeholder="Username"/>
+          <input className="bnb-input" type="password" placeholder="Password"/>
+          <button className="bnb-button">Login</button>
+        </div>
       </div>
     );
   }
 }
 
-export default App;
+
+export default Login;

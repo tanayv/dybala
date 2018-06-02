@@ -1,9 +1,62 @@
 
 @import url('https://fonts.googleapis.com/css?family=Hind:400,600');
 
-body {
+body, html {
   margin: 0;
   padding: 0;
   font-family: 'Hind', sans-serif;
+  height: 100%;
+  width: 100%;
 }
 
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Hind', sans-serif;
+}
+
+.mat-background {
+  width: 100%;
+  height: 100%;
+  background-color: #ecebeb;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+}
+
+.mat-card {
+  background-color: #fff;
+  box-shadow: 1px 5px 9px -2px #bdbbbb;
+  border-radius: 2px;
+}
+
+.bnb-input {
+  width: 100%;
+  background: none;
+  border: 1px solid #dddddd;
+  outline: none;
+  font-size: 1rem;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.bnb-button {
+  width: 100%;
+  background-color: #3277f0;
+  color: #fff;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 3px;
+  margin-top: 15px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.bnb-button:hover {
+  background-color: #3073e6;
+}

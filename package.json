@@ -1,0 +1,28 @@
+{
+  "name": "dybala",
+  "version": "1.0.0",
+  "description": "Content management system built using React and Redux",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "path": "^0.12.7",
+    "redux": "^4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "heroku-postbuild": "cd frontend && npm install --only=dev && npm install && npm run build",
+    "dist": "cd frontend && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanayv/dybala.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tanayv/dybala/issues"
+  },
+  "homepage": "https://github.com/tanayv/dybala#readme"
+}
