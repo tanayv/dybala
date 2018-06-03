@@ -13,7 +13,7 @@
   "scripts": {
     "start": "node index.js",
     "heroku-postbuild": "cd frontend && npm install --only=dev && npm install && npm run build",
-    "dist": "cd frontend && npm run build"
+    "build": "cd frontend && npm run build"
   },
   "repository": {
     "type": "git",

@@ -52,7 +52,6 @@ class Login extends React.Component {
     this.props.startLogin(this.state.username, this.state.password);
   }
 
-  
 }
 
 Login.propTypes = {

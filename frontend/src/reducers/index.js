@@ -1,9 +1,22 @@
 import { combineReducers } from 'redux'
-import authenticate from './authenticate'
+import {
+  REQUEST_USER_DATA,
+  RETURN_USER_DATA,
+} from '../actions/LoginActions'
 
-const reducers = combineReducers({
-  authenticate
-});
+function loginReducer(state = 'reactjs', action) {
+  switch (action.type) {
+    case REQUEST_USER_DATA:
+      return action.loginCredentials
+    case RETURN_USER_DATA:
+      return action.userData
+    default:
+      return state
+  }
+}
 
-export default reducers;
+const rootReducer = combineReducers({
+  loginReducer
+})
 
+export default rootReducer
