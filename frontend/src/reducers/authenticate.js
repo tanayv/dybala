@@ -1,18 +1,16 @@
 
-import { LoginActions } from '../actions/actions'
-
-var sampleAuthObject = {
+var sampleAuthProfile = {
     "email": "bishk@email.com",
     "name": "Taboriwala Ghajar",
 }
 
 function authenticate(state = [], action) {
     switch (action.type) {
-        case LoginActions.LOGIN:
+        case 'LOGIN':
         return [
             ...state,
             {
-            user: sampleAuthObject
+            authProfile: sampleAuthProfile
             }
         ]
         default:

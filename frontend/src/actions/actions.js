@@ -1,7 +1,6 @@
 
 /* Action Types */
-export const LOGIN = 'LOGIN'
 
-export const LoginActions = {
-    LOGIN: 'LOGIN'
-}
+export const startAuthentication = () => ({
+    type: 'LOGIN'
+})
